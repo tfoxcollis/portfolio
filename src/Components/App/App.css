@@ -45,13 +45,14 @@
 .welcome-message {
   width: 80%;
   margin-top: 5em;
-  border: double black;
+  /* border: double black; */
   /* background-color: #495057; */
 }
 
 .main-container {
   width: 90%;
   display: flex;
+  flex-direction: column;
 
 }
 

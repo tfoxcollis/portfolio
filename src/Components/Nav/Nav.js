@@ -9,7 +9,7 @@ function Nav() {
     // variant: "outlined",
     background: "black",
     color: "#0DFDD7",
-    fontWeight: 600,
+    fontWeight: 'lighter',
   });
   return (
     <div className="navbar">

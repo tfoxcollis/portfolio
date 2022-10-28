@@ -3,15 +3,15 @@ import React from 'react'
 import './App.css';
 import Nav from '../Nav/Nav';
 import Welcome from '../Welcome/Welcome';
+import Skills from '../Skills/Skills';
 
 const App = () => {
   return (
     <div className="main-page">
-        <Nav/>
+        <Nav />
       <div className="main-container">
-        <Welcome/>
-        {/* <Resume />
-        <Skills /> */}
+        <Welcome />
+        {/* <Skills /> */}
       </div>
     </div>  
   )

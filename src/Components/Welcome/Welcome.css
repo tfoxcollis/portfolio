@@ -4,15 +4,17 @@
   font-family: "Poppins", sans-serif;
   font-size: 6em;
   font-weight: 500;
-  color: black;
+  color: #343a40;
   letter-spacing: 5px;
   text-transform: uppercase;
   transition: 0.5s;
   width: 2em;
+  margin: 0;
+  margin-left: .2em;
 }
 
 .hello:hover {
-  color: #0DFDD7;
+  color: #7b2cbf;
   text-shadow: 0 0 5px #03e9f4,
               0 0 25px #03e9f4,
               0 0 50px #03e9f4,
@@ -20,10 +22,13 @@
 }
 .intro {
   margin-left: 1.5em;
+  font-weight: lighter;
 }
 
 .welcome-message {
+  font-family: 'Quicksand', sans-serif;
   height: 300px;
   margin-left: 40px;
+  color: white;
 
 }

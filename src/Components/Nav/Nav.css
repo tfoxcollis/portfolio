@@ -1,5 +1,7 @@
 .navbar {
+  width: 10%;
   height: 100%;
-  margin-top: 6em;
-  border: solid white 
+  padding-top: 6em;
+  background-color: black;
+  /* border: solid white  */
 }

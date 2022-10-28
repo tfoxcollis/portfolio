@@ -7,11 +7,11 @@ import Welcome from '../Welcome/Welcome';
 const App = () => {
   return (
     <div className="main-page">
-      <div className="nav-bar">
         <Nav/>
-      </div>
-      <div className="welcome-message">
+      <div className="main-container">
         <Welcome/>
+        {/* <Resume />
+        <Skills /> */}
       </div>
     </div>  
   )

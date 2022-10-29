@@ -43,6 +43,7 @@
 
 .box:hover{
   height:400px;
+  cursor: pointer;
 }
 
 .box .imgbox{

@@ -6,7 +6,6 @@ import styled from "@emotion/styled";
 
 function Nav() {
   const MyButton = styled(Button)({
-    // variant: "outlined",
     background: "black",
     color: "#0DFDD7",
     fontWeight: 'lighter',

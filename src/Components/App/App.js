@@ -4,6 +4,7 @@ import './App.css';
 import Nav from '../Nav/Nav';
 import Welcome from '../Welcome/Welcome';
 import Skills from '../Skills/Skills';
+import Projects from '../Projects/Projects';
 
 const App = () => {
   return (
@@ -11,7 +12,7 @@ const App = () => {
         <Nav />
       <div className="main-container">
         <Welcome />
-        {/* <Skills /> */}
+        <Projects />
       </div>
     </div>  
   )

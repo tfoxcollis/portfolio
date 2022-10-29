@@ -9,7 +9,6 @@ const Welcome = () => {
     <div className="welcome-message">
       <h1 className="hello">Welcome.</h1>
       <div className="intro">
-        {/* <h2>Welcome!</h2>   */}
       </div>
       <Skills />
     </div>

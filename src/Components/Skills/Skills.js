@@ -80,7 +80,8 @@ const Skills = () => {
               <span className="string-highlight">'Javascript'</span>,
               <span className="string-highlight">'E2E testing'</span>{`],
           currentlyLearning:[`}<span className="string-highlight">'Graphql'</span>,
-              <span className="string-highlight">'Typescript'</span>{`],
+              <span className="string-highlight">'Typescript'</span>,
+              <span className="string-highlight">'MUI'</span>{`],
           hobbies:[`}<span className="string-highlight">'Reading'</span>,
               <span className="string-highlight">'Photography'</span>,
               <span className="string-highlight">'Long walks to the Fridge'</span>{`]

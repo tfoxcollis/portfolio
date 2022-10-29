@@ -16,7 +16,7 @@ const Projects = () => {
         Projects.
       </div>
       <div className="box-container">
-        <a href="http://www.birds-of-a-feather.net">
+        <a href="http://www.birds-of-a-feather.net" target="_blank">
           <div className="box">
             <div className="imgbox">
               <img src={boafGroup}/>
@@ -26,7 +26,7 @@ const Projects = () => {
             </div>
           </div>
         </a>
-        <a href="https://birds-of-a-feather-lv.herokuapp.com/">
+        <a href="https://birds-of-a-feather-lv.herokuapp.com/" target="_blank">
           <div className="box">
             <div className="imgbox">
               <img src={boafSolo}/>
@@ -36,7 +36,7 @@ const Projects = () => {
             </div>
           </div>
         </a>
-        <a href="https://scream-streams.herokuapp.com/Consent">
+        <a href="https://scream-streams.herokuapp.com/Consent" target="_blank">
           <div className="box">
             <div className="imgbox">
               <img src={screamStreams} />
@@ -46,7 +46,7 @@ const Projects = () => {
             </div>
           </div>
         </a>
-        <a href="https://zen-in-ten.herokuapp.com/">
+        <a href="https://zen-in-ten.herokuapp.com/" target="_blank">
           <div className="box">
             <div className="imgbox">
               <img src={zen} />

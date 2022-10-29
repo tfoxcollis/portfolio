@@ -15,8 +15,8 @@ function Nav() {
       <Stack direction="column" spacing={1} sx={{ width: "140px" }}>
         <MyButton>About Me</MyButton>
         <MyButton>Resume</MyButton>
-        <MyButton>Skills</MyButton>
-        <MyButton>Projects</MyButton>
+        <MyButton href="skills">Skills</MyButton>
+        <MyButton href="#proj-container">Projects</MyButton>
         <MyButton>Contact Me</MyButton>
       </Stack>
 

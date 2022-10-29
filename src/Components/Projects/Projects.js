@@ -6,12 +6,8 @@ import screamStreams from '../../assets/scream-streams.png'
 import zen from '../../assets/zen.png'
 
 const Projects = () => {
-
-  const handleClick = () => {
-
-  }
   return (
-    <div className="proj-container">
+    <div id="proj-container" className="proj-container">
       <div className="proj-title">
         Projects.
       </div>

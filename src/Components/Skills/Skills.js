@@ -67,7 +67,7 @@ const Skills = () => {
   }, [])
 
   return (
-    <div>
+    <div id="skills">
       <pre id="typewriter">
         <span className="var-highlight">    var</span>{` object = 
         { 

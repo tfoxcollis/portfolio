@@ -13,7 +13,7 @@ function Nav() {
   return (
     <div className="navbar">
       <Stack direction="column" spacing={1} sx={{ width: "140px" }}>
-        <MyButton>About Me</MyButton>
+        <MyButton href="#about">About Me </MyButton>
         <MyButton>Resume</MyButton>
         <MyButton href="skills">Skills</MyButton>
         <MyButton href="#proj-container">Projects</MyButton>

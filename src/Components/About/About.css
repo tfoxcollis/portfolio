@@ -25,12 +25,13 @@
 }
 
 .about-container {
-  width: 100%;
+  width: 99%;
   height: 200px;
   color: white;
   border: solid;
   overflow: hidden;
   font-size: 20px;
+  
 }
 
 .about-container:hover {
@@ -41,4 +42,9 @@
 
 .avatar {
   margin-right: 50px;
+}
+
+.about-me-section {
+  display: flex;
+  justify-content: center;
 }

@@ -14,7 +14,8 @@ const About = () => {
       <section className="about-me-section">
         <pre className="about-container">
           {`
-  I know you're not looking for a novel- so I'll try to be concise!  
+  Heres an abridged progression of my career journey.  Want to know more?  
+  Hit that contact button and lets connect!  
 
   I started my work career at Wells Fargo bank at the age of 19 - within 2 year 
   I was a Service Manager.  I was responsible for the teller side and compliance 

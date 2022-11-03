@@ -17,7 +17,7 @@ const About = () => {
   Heres an abridged progression of my career journey.  Want to know more?  
   Hit that contact button and lets connect!  
 
-  I started my work career at Wells Fargo bank at the age of 19 - within 2 year 
+  I started my work career at Wells Fargo bank at the age of 19 - within 2 years 
   I was a Service Manager.  I was responsible for the teller side and compliance 
   for the entire branch.  I spent just over 8 years at Wells Fargo before I decided 
   to pursue my childhood dream of becoming a nurse.  

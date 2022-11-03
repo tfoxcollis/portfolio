@@ -6,7 +6,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   margin-top: 90px;
 }
 
@@ -203,3 +202,24 @@
 .fighter-icon {
   color: #03e9f4;
 }
+
+.contact-header {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #343a40;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+}
+
+.contact-header:hover {
+  color: #7b2cbf;
+  text-shadow: 0 0 5px #03e9f4,
+               0 0 25px #03e9f4,
+               0 0 50px #03e9f4,
+               0 0 100px #03e9f4;
+}
+

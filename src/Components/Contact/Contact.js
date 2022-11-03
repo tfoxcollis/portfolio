@@ -10,7 +10,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_ot7m8ye', 'template_uxsodin', form.current, 'rA8GGTB7ZpaSgBPLT')
+    emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_KEY, process.env.REACT_APP_EMAIL_TEMPLATE_KEY, form.current, process.env.REACT_APP_EMAIL_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -20,7 +20,7 @@ const Contact = () => {
 
   return (
     <div id="contactContainer" className="form-container">
-      <h2 className="front-text text-white">Contact Me</h2>
+      <h2 className="front-text text-white contact-header">Contact Me</h2>
       <label className="btn-open" for="frmContactForm">
         <FontAwesomeIcon icon={ faEnvelope } />
         <span className="ml-half">Open Form</span>

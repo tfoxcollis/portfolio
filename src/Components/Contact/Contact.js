@@ -47,7 +47,7 @@ const Contact = () => {
                 </label>
                 <button className="btn-open ml-whole" type="button">
                   <FontAwesomeIcon icon={faPaperPlane} />
-                  <span className="ml-half">Send</span>
+                  <span className="ml-half"><label for="frmContactForm">Send</label></span>
                 </button>
               </div>
             </div>

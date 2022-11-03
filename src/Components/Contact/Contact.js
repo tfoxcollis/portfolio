@@ -32,9 +32,9 @@ const Contact = () => {
             <div className="contact-wrapper">
               <div className="contact-section">
                 <h3 className="p-none m-none mb-quarter text-white">
-                  <FontAwesomeIcon icon={faFighterJet} />
+                  <FontAwesomeIcon className="fighter-icon text-white" icon={faFighterJet} />
                   <span className="ml-half">
-                    Talk to me, Goose.
+                    Talk to me, Goose.  
                   </span>
                 </h3>
               </div>

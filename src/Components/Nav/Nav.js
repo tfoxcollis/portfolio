@@ -17,7 +17,7 @@ function Nav() {
         <MyButton>Resume</MyButton>
         <MyButton href="skills">Skills</MyButton>
         <MyButton href="#proj-container">Projects</MyButton>
-        <MyButton>Contact Me</MyButton>
+        <MyButton href="#contactContainer">Contact Me</MyButton>
       </Stack>
 
     </div>

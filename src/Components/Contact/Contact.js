@@ -51,7 +51,7 @@ const Contact = () => {
                   <FontAwesomeIcon className="icon text-white" icon={ faAt } />
                 </div>
                 <div className="form-item">
-                  <textarea id="txtContent" name="txtContent" placeholder="This is where you tell me about your job opportunity :)"></textarea>
+                  <textarea id="txtContent" name="txtContent" rows="10" placeholder="This is where you tell me about your job opportunity :)"></textarea>
                   <label className="lbl-floating" for="txtContent">{"This is where you tell me about your job opportunity :)"}</label>
                   <FontAwesomeIcon className="icon text-white" icon={ faComment } />
                 </div>

@@ -34,7 +34,7 @@
 
 }
 
-.about-container:hover {
+.expanded {
   height: 930px;
   border: solid;
   overflow: visible;
@@ -47,4 +47,8 @@
 .about-me-section {
   display: flex;
   justify-content: center;
+}
+
+.about-container:hover {
+  cursor: pointer;
 }

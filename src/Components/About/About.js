@@ -5,6 +5,11 @@ import { deepPurple } from '@mui/material/colors';
 import mypic from '../../assets/mypic.JPG'
 
 const About = () => {
+
+  const handleClick = (e) => {
+    e.target.classList.toggle("expanded")
+  }
+
   return (
     <div>
       <div id="about" className="about-title">
@@ -12,7 +17,7 @@ const About = () => {
         <p>Me. Myself. And I.</p>
       </div>
       <section className="about-me-section">
-        <pre className="about-container">
+        <pre className="about-container" onClick={(e) => handleClick(e)}>
           {`
   Heres an abridged progression of my career journey.  Want to know more?  
   Hit that contact button and lets connect!  

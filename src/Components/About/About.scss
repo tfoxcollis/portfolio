@@ -24,20 +24,11 @@
                0 0 100px #03e9f4;
 }
 
-.about-container {
-  width: 99%;
-  height: 200px;
-  color: white;
-  border: solid;
-  overflow: hidden;
-  font-size: 20px;
-
-}
-
 .expanded {
   height: 930px;
   border: solid;
-  overflow: visible;
+  overflow: hidden;
+  transition: height 1s;
 }
 
 .avatar {
@@ -51,4 +42,46 @@
 
 .about-container:hover {
   cursor: pointer;
+}
+
+// 
+.about-container {
+  width: 99%;
+  height: 200px;
+  color: white;
+  border: solid;
+  overflow: hidden;
+  font-size: 20px;
+
+}
+.open {
+  animation: sweepin 1.5s ease-in-out;
+  height: 930px;
+  overflow: hidden;
+}
+
+.close {
+  animation: sweepout 1s ease-in-out;
+}
+
+@keyframes sweepin {
+  0% {
+    opacity: 0;
+    margin-left: -10px
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px
+  }
+}
+
+@keyframes sweepout {
+  0% {
+    opacity: 1;
+    margin-left: 0px
+  }
+  100% {
+    opacity: 0;
+    margin-left: -10px
+  }
 }

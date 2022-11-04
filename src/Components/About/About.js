@@ -1,14 +1,34 @@
-import React from 'react'
-import './About.css'
+import React, { useRef } from 'react'
+import './About.scss'
 import Avatar from '@mui/material/Avatar';
 import { deepPurple } from '@mui/material/colors';
 import mypic from '../../assets/mypic.JPG'
+import { Transition } from 'react-transition-group';
 
 const About = () => {
+  const duration = 300;
+
+  const defaultStyle = {
+    transition: `opacity ${duration}ms ease-in-out`,
+    opacity: 0,
+  }
 
   const handleClick = (e) => {
-    e.target.classList.toggle("expanded")
+    if(!e.target.classList.contains('open') && !e.target.classList.contains('close')) {
+      e.target.classList.add('open')
+      e.target.addEventListener("animationend", function() {
+        e.target.classList.add("animationDone")
+      })
+    } else if (e.target.classList.contains('open') && e.target.classList.contains("animationDone")) {
+      e.target.classList.add("close")
+      e.target.addEventListener("animationend", function() {
+        e.target.classList.remove("open")
+        e.target.classList.remove("close")
+        e.target.classList.remove("animationDone")
+      })
+    }
   }
+    // e.target.classList.toggle("expanded")
 
   return (
     <div>
@@ -17,7 +37,7 @@ const About = () => {
         <p>Me. Myself. And I.</p>
       </div>
       <section className="about-me-section">
-        <pre className="about-container" onClick={(e) => handleClick(e)}>
+        <pre className={`about-container` } onClick={(e) => handleClick(e)}>
           {`
   Heres an abridged progression of my career journey.  Want to know more?  
   Hit that contact button and lets connect!  

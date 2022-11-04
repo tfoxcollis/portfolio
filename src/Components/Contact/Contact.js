@@ -22,7 +22,7 @@ const Contact = () => {
   return (
     <div id="contactContainer" className="form-container">
       <h2 className="front-text text-white contact-header">Contact Me</h2>
-      <label className="btn-open" for="frmContactForm">
+      <label className="btn-open" htmlFor="frmContactForm">
         <FontAwesomeIcon icon={ faEnvelope } />
         <span className="ml-half">Open Form</span>
       </label>
@@ -41,13 +41,13 @@ const Contact = () => {
               </div>
               <FormInputs />
               <div className="contact-section text-right">
-                <label className="contact-cancel" for="frmContactForm">
+                <label className="contact-cancel" htmlFor="frmContactForm">
                   <FontAwesomeIcon icon={faCircleXmark} />
                   <span className="ml-quarter">Cancel</span>
                 </label>
                 <button className="btn-open ml-whole" type="submit">
                   <FontAwesomeIcon icon={faPaperPlane} />
-                  <span className="ml-half"><label for="frmContactForm">Send</label></span>
+                  <span className="ml-half"><label htmlFor="frmContactForm">Send</label></span>
                 </button>
               </div>
             </div>

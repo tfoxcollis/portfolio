@@ -1,8 +1,9 @@
 import React, { useRef } from 'react'
 import './Contact.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFighterJet, faEnvelope, faUser, faAt, faComment, faCircleXmark, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { faFighterJet, faEnvelope, faCircleXmark, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import emailjs from '@emailjs/browser';
+import { FormInputs } from './FormInputs'
 
 const Contact = () => {
   const form = useRef();
@@ -38,24 +39,7 @@ const Contact = () => {
                   </span>
                 </h3>
               </div>
-              <div className="contact-section">
-                <input type="hidden" name="toName" value="Trish"></input>
-                <div className="form-item">
-                  <input type="text" id="txtFullName" name="txtFullName" placeholder="name" />
-                  <label className="lbl-floating" for="txtFullName">Name</label>
-                  <FontAwesomeIcon className="icon text-white" icon={ faUser } />
-                </div>
-                <div className="form-item">
-                  <input type="text" id="txtEmail" name="txtEmail" placeholder="email" />
-                  <label className="lbl-floating" for="txtEmail">Email</label>
-                  <FontAwesomeIcon className="icon text-white" icon={ faAt } />
-                </div>
-                <div className="form-item">
-                  <textarea id="txtContent" name="txtContent" rows="10" placeholder="This is where you tell me about your job opportunity :)"></textarea>
-                  <label className="lbl-floating" for="txtContent">{"This is where you tell me about your job opportunity :)"}</label>
-                  <FontAwesomeIcon className="icon text-white" icon={ faComment } />
-                </div>
-              </div>
+              <FormInputs />
               <div className="contact-section text-right">
                 <label className="contact-cancel" for="frmContactForm">
                   <FontAwesomeIcon icon={faCircleXmark} />

@@ -13,9 +13,9 @@ import { Route, Router } from 'react-router-dom';
 const App = () => {
   return (
     <div className="main-page">
+        <Nav />
         <Route path="/resume" component={ Resume } />
         <Route exact path="/">
-          <Nav />
           <div className="main-container">
             <Welcome />
             <Projects />

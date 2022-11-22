@@ -7,7 +7,7 @@ import zen from '../../assets/zen.png'
 
 const Projects = () => {
   return (
-    <div id="proj-container" className="proj-container">
+    <div id="projContainer" className="proj-container">
       <div className="proj-title">
         Projects.
       </div>

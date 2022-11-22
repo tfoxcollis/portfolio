@@ -24,7 +24,7 @@ const Resume = () => {
 
   return (
     <div className="resume">
-      <a href={myResume} download={myResume}>Download My Resume</a>
+      <a className="resume-download" href={myResume} download={myResume}>Download My Resume</a>
       {myDoc()}
     </div>
   )

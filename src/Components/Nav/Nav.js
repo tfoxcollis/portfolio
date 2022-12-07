@@ -9,9 +9,12 @@ function Nav() {
   const MyButton = styled(HashLink)({
     background: "black",
     color: "#0DFDD7",
-    fontWeight: 'lighter',
+    fontWeight: 'light',
     textDecoration: 'none',
     textAlign: 'center',
+    '&:hover': {
+      color: "#7b2cbf"
+    }
   });
   return (
     <div className="navbar">

@@ -3,7 +3,7 @@ import './Projects.css'
 import boafGroup from '../../assets/boaf-group.png'
 import boafSolo from '../../assets/boaf-solo.png'
 import screamStreams from '../../assets/scream-streams.png'
-import zen from '../../assets/zen.png'
+import golden from '../../assets/golden.png'
 
 const Projects = () => {
   return (
@@ -22,7 +22,7 @@ const Projects = () => {
             </div>
           </div>
         </a>
-        <a href="https://birds-of-a-feather-lv.herokuapp.com/" target="_blank">
+        <a href="https://birds-of-a-feather-jp0tuvbuk-tfoxcollis.vercel.app" target="_blank">
           <div className="box">
             <div className="imgbox">
               <img src={boafSolo}/>
@@ -32,7 +32,7 @@ const Projects = () => {
             </div>
           </div>
         </a>
-        <a href="https://scream-streams.herokuapp.com/Consent" target="_blank">
+        <a href="scream-streams-hpyf0h9te-tfoxcollis.vercel.app" target="_blank">
           <div className="box">
             <div className="imgbox">
               <img src={screamStreams} />
@@ -42,13 +42,13 @@ const Projects = () => {
             </div>
           </div>
         </a>
-        <a href="https://zen-in-ten.herokuapp.com/" target="_blank">
+        <a href="golden-tic-tac-pqy01jcdj-tfoxcollis.vercel.app" target="_blank">
           <div className="box">
             <div className="imgbox">
-              <img src={zen} />
+              <img src={golden} />
               </div>
             <div className="content">
-            <h2>Zen in Ten<br />Group- React with Typescript</h2>
+            <h2>Golden Tic-Tac-Toe<br />Solo - Vanilla JS</h2>
             </div>
           </div>
         </a>

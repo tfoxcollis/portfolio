@@ -4,6 +4,7 @@ import './Navbar.css'
 import Avatar from '@mui/material/Avatar';
 import { deepPurple } from '@mui/material/colors';
 import mypic from '../../assets/mypic.JPG'
+import styled from '@emotion/styled';
 
 
 const Navbar = () => {
@@ -12,13 +13,22 @@ const [click, setClick] = useState (false)
 
 const handleClick = () => setClick(!click)
 const closeMobileMenu = () => setClick(false)
-
+const MyAvatar = styled(Avatar) ({
+  width: '65px',
+  height: '65px',
+  marginRight: '10px',
+  '@media (max-width: 960px)': {
+    width: '45px',
+    height: '45px',
+    margin: '15px'
+  },
+})
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          <Avatar className="avatar" src={mypic} alt="picture of Trish" sx={{ bgcolor: deepPurple[500], width: 75, height: 75, margin: 1}}>T</Avatar>Trish Fox-Collis 
+          <MyAvatar className="avatar" src={mypic} alt="picture of Trish"></MyAvatar>Trish Fox-Collis 
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -31,17 +41,17 @@ const closeMobileMenu = () => setClick(false)
             </li>
             <li className='nav-item'>
               <Link to='/denmark' className='nav-links' onClick={closeMobileMenu}>
-                Denmark
+                Projects
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='/paris' className='nav-links' onClick={closeMobileMenu}>
-                Paris
+                Resume
               </Link>
             </li>
               <li className='nav-item'>
               <Link to='/jamaica' className='nav-links' onClick={closeMobileMenu}>
-                Jamaica
+                About Me
               </Link>
             </li>
           </ul>

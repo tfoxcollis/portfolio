@@ -1,7 +1,7 @@
 .form-container {
   font-size: 20px;
   width: 100%;
-  height: 20vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,14 +21,14 @@
 
 .btn-open {
   color: #ffffff;
-  font-size: 1.25em;
+  font-size: 1.10em;
   font-family: inherit;
   background-color: lightgray;
   padding: 0.5em 1em;
   border: 0;
   outline: 0;
   margin-top: 0.5em;
-  border-radius: 1.1em / 50%;
+  border-radius: 1.1em / 30%;
   box-shadow: 0 0.1em 0.3em rgba(#000000, 0.5), 0 -0.5em 1em rgba(#000000, 0.4) inset;
   transition: box-shadow 32ms ease-out, color 32ms ease-out;
   cursor: pointer;
@@ -204,12 +204,11 @@
 
 .contact-header {
   font-family: "Poppins", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 500;
-  color: #343a40;
+  color: #747e8a;
   letter-spacing: 5px;
   text-transform: uppercase;
-  transition: 0.5s;
   display: flex;
   align-items: center;
 }

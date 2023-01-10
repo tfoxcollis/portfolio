@@ -4,6 +4,7 @@ import Stack from "@mui/material/Stack";
 import styled from "@emotion/styled";
 import { HashLink } from 'react-router-hash-link';
 import Divider from '@mui/material/Divider';
+import { minWidth } from '@mui/system';
 
 function Nav() {
   const MyButton = styled(HashLink)({
@@ -14,10 +15,16 @@ function Nav() {
     textAlign: 'center',
     '&:hover': {
       color: "#7b2cbf"
-    }
+    },
+    minWidth: '100px',
   });
+
+  const MyDiv = styled('div') ({
+    minWidth: '150px',
+  })
+
   return (
-    <div className="navbar">
+    <MyDiv className="navbar">
       <Stack
         direction="column"
         spacing={1} 
@@ -30,7 +37,7 @@ function Nav() {
         <MyButton smooth to="/#contactContainer">Contact Me</MyButton>
       </Stack>
 
-    </div>
+    </MyDiv>
   );
 }
 

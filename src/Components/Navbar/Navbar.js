@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 import Avatar from '@mui/material/Avatar';
-import { deepPurple } from '@mui/material/colors';
 import mypic from '../../assets/mypic.JPG'
 import styled from '@emotion/styled';
 

@@ -6,12 +6,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 90px;
 }
 
 .front-text {
   text-align: center;
-  text-shadow: 0 0.15em 0.3em rgba(#000000, 0.5);
+  // text-shadow: 0 0.15em 0.3em rgba(#000000, 0.5);
   padding: 0;
   margin: 0 0.5em 0.5em;
   filter: drop-shadow(0, 0, 0.1em, #000000);
@@ -24,7 +23,7 @@
   color: #ffffff;
   font-size: 1.25em;
   font-family: inherit;
-  background-color: #7b2cbf;
+  background-color: lightgray;
   padding: 0.5em 1em;
   border: 0;
   outline: 0;
@@ -187,7 +186,7 @@
     position: absolute;
     top: 1.8em;
     left: 1em;
-    color: #03e9f4;
+    color: #1f669f;
   }
   label.lbl-floating {
     color: #c2c2c2;
@@ -200,7 +199,7 @@
 }
 
 .fighter-icon {
-  color: #03e9f4;
+  color: #1f669f;
 }
 
 .contact-header {
@@ -213,13 +212,5 @@
   transition: 0.5s;
   display: flex;
   align-items: center;
-}
-
-.contact-header:hover {
-  color: #7b2cbf;
-  text-shadow: 0 0 5px #03e9f4,
-               0 0 25px #03e9f4,
-               0 0 50px #03e9f4,
-               0 0 100px #03e9f4;
 }
 

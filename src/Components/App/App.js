@@ -1,7 +1,7 @@
 
 import React from 'react'
 import './App.css';
-import Navbar from '../NavBar/Navbar'
+import Navbar from '../Navbar/Navbar'
 import Welcome from '../Welcome/Welcome';
 import Skills from '../Skills/Skills';
 import Projects from '../Projects/Projects';

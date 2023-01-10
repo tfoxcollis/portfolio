@@ -27,7 +27,7 @@ const MyAvatar = styled(Avatar) ({
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <Link to="/rick" className="navbar-logo" onClick={closeMobileMenu}>
           <MyAvatar className="avatar" src={mypic} alt="picture of Trish"></MyAvatar>Trish Fox-Collis 
           </Link>
           <div className="menu-icon" onClick={handleClick}>

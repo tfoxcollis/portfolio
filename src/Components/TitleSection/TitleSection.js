@@ -1,6 +1,6 @@
 import React from 'react'
 import '../App/App.css'
-import video5 from '../../videos/video-5.mp4'
+import video5 from '../../assets/videos/video-5.mp4'
 import './TitleSection.css'
 import Contact from '../Contact/Contact'
 

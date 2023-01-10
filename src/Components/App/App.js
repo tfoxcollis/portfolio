@@ -7,7 +7,7 @@ import Skills from '../Skills/Skills';
 import Projects from '../Projects/Projects';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
-import Resume from '../Resume/Resume';
+import Resume from '../pages/Resume';
 import Home from '../pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 

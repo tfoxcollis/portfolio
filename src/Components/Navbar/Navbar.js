@@ -4,6 +4,7 @@ import './Navbar.css'
 import Avatar from '@mui/material/Avatar';
 import mypic from '../../assets/mypic.JPG'
 import styled from '@emotion/styled';
+import { HashLink } from 'react-router-hash-link';
 
 
 const Navbar = () => {
@@ -39,17 +40,17 @@ const MyAvatar = styled(Avatar) ({
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='/denmark' className='nav-links' onClick={closeMobileMenu}>
+              <HashLink smooth to='/#cardsContainer' className='nav-links' onClick={closeMobileMenu}>
                 Projects
-              </Link>
+              </HashLink>
             </li>
             <li className='nav-item'>
-              <Link to='/paris' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/resume' className='nav-links' onClick={closeMobileMenu}>
                 Resume
               </Link>
             </li>
               <li className='nav-item'>
-              <Link to='/jamaica' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/About' className='nav-links' onClick={closeMobileMenu}>
                 About Me
               </Link>
             </li>

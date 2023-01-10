@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+.main-about {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
 .about-title {
   font-family: "Poppins", sans-serif;
   font-size: 3em;
@@ -13,23 +19,22 @@
   margin-left: 1em;
   padding-top: 3em;
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
 }
 
+.about-title > p {
+  text-align: center;
+}
+
 .about-title:hover {
-  color: #7b2cbf;
+  color: #1f669f;
   text-shadow: 0 0 5px #03e9f4,
                0 0 25px #03e9f4,
                0 0 50px #03e9f4,
                0 0 100px #03e9f4;
 }
 
-.expanded {
-  height: 930px;
-  border: solid;
-  overflow: hidden;
-  transition: height 1s;
-}
 
 .avatar {
   margin-right: 50px;
@@ -40,48 +45,14 @@
   justify-content: center;
 }
 
-.about-container:hover {
-  cursor: pointer;
-}
 
-// 
 .about-container {
+  display: flex;
+  justify-content: center;
   width: 99%;
   height: 200px;
   color: white;
-  border: solid;
-  overflow: hidden;
   font-size: 20px;
-
-}
-.open {
-  animation: sweepin 1.5s ease-in-out;
-  height: 930px;
-  overflow: hidden;
 }
 
-.close {
-  animation: sweepout 1s ease-in-out;
-}
 
-@keyframes sweepin {
-  0% {
-    opacity: 0;
-    margin-left: -10px
-  }
-  100% {
-    opacity: 1;
-    margin-left: 0px
-  }
-}
-
-@keyframes sweepout {
-  0% {
-    opacity: 1;
-    margin-left: 0px
-  }
-  100% {
-    opacity: 0;
-    margin-left: -10px
-  }
-}

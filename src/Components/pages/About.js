@@ -1,43 +1,18 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import './About.scss'
 import Avatar from '@mui/material/Avatar';
-import { deepPurple } from '@mui/material/colors';
-import mypic from '../../assets/mypic.JPG'
-import { Transition } from 'react-transition-group';
+import mypic from '../../assets/mypic2.jpg'
 
 const About = () => {
-  const duration = 300;
-
-  const defaultStyle = {
-    transition: `opacity ${duration}ms ease-in-out`,
-    opacity: 0,
-  }
-
-  const handleClick = (e) => {
-    if(!e.target.classList.contains('open') && !e.target.classList.contains('close')) {
-      e.target.classList.add('open')
-      e.target.addEventListener("animationend", function() {
-        e.target.classList.add("animationDone")
-      })
-    } else if (e.target.classList.contains('open') && e.target.classList.contains("animationDone")) {
-      e.target.classList.add("close")
-      e.target.addEventListener("animationend", function() {
-        e.target.classList.remove("open")
-        e.target.classList.remove("close")
-        e.target.classList.remove("animationDone")
-      })
-    }
-  }
-    // e.target.classList.toggle("expanded")
 
   return (
-    <div>
+    <div className="main-about">
       <div id="about" className="about-title">
-        <Avatar className="avatar" src={mypic} alt="picture of Trish" sx={{ bgcolor: deepPurple[500], width: 150, height: 150}}>T</Avatar>
         <p>Me. Myself. And I.</p>
+        <Avatar className="avatar" src={mypic} alt="picture of Trish" sx={{ width: 150, height: 150}}></Avatar>
       </div>
       <section className="about-me-section">
-        <pre className={`about-container` } onClick={(e) => handleClick(e)}>
+        <pre className={`about-container` }>
           {`
   Heres an abridged progression of my career journey.  Want to know more?  
   Hit that contact button and lets connect!  
@@ -48,7 +23,7 @@ const About = () => {
   to pursue my childhood dream of becoming a nurse.  
 
   I went to the University of Colorado where I obtained my Bachelors, graduating 
-  with a 3.6 GPA (humble brag- I did this with a 1 and 2 year old at home haha).  
+  with a 3.7 GPA (humble brag- I did this with a 1 and 2 year old at home).  
   Being a nurse was everything my 12 year old self had hoped it would be. 
   That is until the pandemic. After a lot of self reflection and many talks
   with my family - I decided to rewrite my future and go back to school to
@@ -75,9 +50,9 @@ const About = () => {
       B. We should probably be best friends. 
       C. No, I will not send you feet pics. Please stop asking.
 
-  The culmination of my work history has set me up to be a valuable asset to any team.  
-  Not to mention I am a Pisces and so basically an artist. Jk but really- I also chose 
-  frontend because it satisfies the artistic and creative part of my personality.  
+  I know that the culmination of my work history has set me up to be a valuable asset to any team.  
+  Not to mention I am a Pisces and so basically an artist. Jk But really- I also chose 
+  Frontend because it satisfies the artistic and creative part of my personality.  
           `}
         </pre>
       </section>

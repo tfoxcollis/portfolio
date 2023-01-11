@@ -23,7 +23,7 @@
   align-items: center;
   height: 80px;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1800px;
 }
 
 .navbar-logo {
@@ -50,6 +50,7 @@
   width: 60vw;
   margin-left: 35px;
   margin-right: 2rem;
+  max-width: 1000px;
 }
 
 .nav-item {

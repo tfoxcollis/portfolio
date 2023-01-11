@@ -10,7 +10,7 @@ import screams from '../../assets/scream-streams.png';
 const Cards = () => {
   return (
     <div className="cards">
-      <h1>Check out some of my projects</h1>
+      <h1>Check out some of my projects!</h1>
       <div id="cardsContainer" className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">

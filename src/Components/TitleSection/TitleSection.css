@@ -20,14 +20,14 @@
 
 .title-container > h1 {
   color: #fff;
-  font-size: 50px;
+  font-size: 90px;
   margin-top: -100px;
 }
 
 .title-container > p {
   margin-top: 8px;
   color:#fff;
-  font-size: 20px;
+  font-size: 32px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -35,28 +35,45 @@
   margin-left: 4px;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1550px) {
   .title-container > h1 {
     font-size: 70px;
     margin-top: -150px;
+  }
+  .title-container > p {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .title-container > h1 {
+    font-size: 50px;
+    margin-top: -150px;
+  }
+  .title-container > p {
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .title-container > h1 {
-    font-size: 50px;
-    margin-top: -75px;
+    font-size: 40px;
+    margin-top: -150px;
   }
 
   .title-container > p {
-    font-size: 15px;
+    font-size: 18px;
+  }
+}
 
+@media screen and (max-width: 400px) {
+  .title-container > h1 {
+    font-size: 30px;
+    margin-top: -150px;
   }
 
-  .btn-mobile {
-    display: block;
-    text-decoration: none;
+  .title-container > p {
+    font-size: 13px;
   }
-
  
 }

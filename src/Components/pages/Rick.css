@@ -3,11 +3,18 @@
   flex-direction: column;
 }
 
-video {
-  margin-top: 50px;
-  width: 100%;
-  height: 70vh;
+.rick-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
+.rick-container > video {
+  margin-top: 50px;
+  width: 80vw;
+  max-width: 1300px;
+  margin-bottom: 5%;
 }
 
 .rick-container > h1 {

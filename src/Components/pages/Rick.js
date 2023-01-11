@@ -7,8 +7,8 @@ const Rick = () => {
     <div className="rick-main">
       <div className='rick-container'>
         <h1>Gotcha!</h1>
-        <p>I mainly did this for some street cred with my 13 year old.</p>
         <video src={rick} autoPlay loop />
+        <p>I mainly did this for some street cred with my 13 year old. He thinks I'm cool now. <br/>Parenting is about balance.</p>
       </div>
     </div>
   )

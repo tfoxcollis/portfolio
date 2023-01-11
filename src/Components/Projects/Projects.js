@@ -12,7 +12,7 @@ const Projects = () => {
         Projects.
       </div>
       <div className="box-container">
-        <a href="https://birds-ui.vercel.app" target="_blank">
+        <a href="https://birds-ui.vercel.app" target="_blank" rel="noreferrer">
           <div className="box">
             <div className="imgbox">
               <img src={boafGroup}/>
@@ -22,7 +22,7 @@ const Projects = () => {
             </div>
           </div>
         </a>
-        <a href="https://birds-of-a-feather-omega.vercel.app" target="_blank">
+        <a href="https://birds-of-a-feather-omega.vercel.app" target="_blank" rel="noreferrer">
           <div className="box">
             <div className="imgbox">
               <img src={boafSolo}/>
@@ -32,7 +32,7 @@ const Projects = () => {
             </div>
           </div>
         </a>
-        <a href="https://scream-streams.vercel.app" target="_blank">
+        <a href="https://scream-streams.vercel.app" target="_blank" rel="noreferrer">
           <div className="box">
             <div className="imgbox">
               <img src={screamStreams} />
@@ -42,7 +42,7 @@ const Projects = () => {
             </div>
           </div>
         </a>
-        <a href="https://golden-tic-tac-toe.vercel.app" target="_blank">
+        <a href="https://golden-tic-tac-toe.vercel.app" target="_blank" rel="noreferrer">
           <div className="box">
             <div className="imgbox">
               <img src={golden} />

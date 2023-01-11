@@ -4,7 +4,6 @@ import Cards from '../Cards/Cards'
 // import Footer from '../Footer'
 import TitleSection from '../TitleSection/TitleSection'
 
-
 const Home = () => {
   return (
     <>

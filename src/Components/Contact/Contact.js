@@ -2,22 +2,22 @@ import React, { useRef } from 'react'
 import './Contact.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFighterJet, faEnvelope, faCircleXmark, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
-import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser'
 import { FormInputs } from './FormInputs'
 
 const Contact = () => {
-  const form = useRef();
+  const form = useRef()
 
   const sendEmail = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_KEY, process.env.REACT_APP_EMAIL_TEMPLATE_KEY, form.current, process.env.REACT_APP_EMAIL_PUBLIC_KEY)
       .then((result) => {
-          console.log(result.text);
+        console.log(result.text)
       }, (error) => {
-          console.log(error.text);
-      });
-  };
+        console.log(error.text)
+      })
+  }
 
   return (
     <div id="contactContainer" className="form-container">
@@ -35,7 +35,7 @@ const Contact = () => {
                 <h3 className="p-none m-none mb-quarter text-white">
                   <FontAwesomeIcon className="fighter-icon text-white" icon={faFighterJet} />
                   <span className="ml-half">
-                    Talk to me, Goose.  
+                    Talk to me, Goose.
                   </span>
                 </h3>
               </div>

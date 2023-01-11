@@ -4,7 +4,6 @@ import video5 from '../../assets/videos/video-5.mp4'
 import './TitleSection.css'
 import Contact from '../Contact/Contact'
 
-
 const TitleSection = () => {
   return (
     <div className='title-container'>

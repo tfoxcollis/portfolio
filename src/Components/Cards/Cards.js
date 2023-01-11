@@ -1,11 +1,10 @@
 import React from 'react'
 import CardItem from '../CardItem/CardItem'
 import './Cards.css'
-import boafgroup from '../../assets/boaf-group.png';
-import boafsolo from '../../assets/boaf-solo.png';
-import golden from '../../assets/golden.png';
-import screams from '../../assets/scream-streams.png';
-
+import boafgroup from '../../assets/boaf-group.png'
+import boafsolo from '../../assets/boaf-solo.png'
+import golden from '../../assets/golden.png'
+import screams from '../../assets/scream-streams.png'
 
 const Cards = () => {
   return (
@@ -14,13 +13,13 @@ const Cards = () => {
       <div id="cardsContainer" className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
-            <CardItem 
+            <CardItem
             src={boafgroup}
             text="Multi app project built with React, Rails and GraphQL"
             label="Group"
             path="https://birds-ui.vercel.app/"
             />
-            <CardItem 
+            <CardItem
             src={boafsolo}
             text="React"
             label="Solo"
@@ -40,7 +39,7 @@ const Cards = () => {
               label='Paired'
               path='https://scream-streams.vercel.app/Consent'
             />
-            
+
           </ul>
         </div>
       </div>

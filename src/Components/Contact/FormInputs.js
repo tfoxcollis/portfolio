@@ -1,4 +1,4 @@
-import { faUser, faAt, faComment } from "@fortawesome/free-solid-svg-icons"
+import { faUser, faAt, faComment } from '@fortawesome/free-solid-svg-icons'
 import { TextInput } from './TextInput'
 import { TextArea } from './TextArea'
 

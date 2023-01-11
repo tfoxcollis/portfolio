@@ -1,34 +1,32 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
-import Avatar from '@mui/material/Avatar';
+import Avatar from '@mui/material/Avatar'
 import mypic from '../../assets/mypic.JPG'
-import styled from '@emotion/styled';
-import { HashLink } from 'react-router-hash-link';
-
+import styled from '@emotion/styled'
+import { HashLink } from 'react-router-hash-link'
 
 const Navbar = () => {
-const [click, setClick] = useState (false)
-  
+  const [click, setClick] = useState(false)
 
-const handleClick = () => setClick(!click)
-const closeMobileMenu = () => setClick(false)
-const MyAvatar = styled(Avatar) ({
-  width: '65px',
-  height: '65px',
-  marginRight: '10px',
-  '@media (max-width: 960px)': {
-    width: '45px',
-    height: '45px',
-    margin: '15px'
-  },
-})
+  const handleClick = () => setClick(!click)
+  const closeMobileMenu = () => setClick(false)
+  const MyAvatar = styled(Avatar)({
+    width: '65px',
+    height: '65px',
+    marginRight: '10px',
+    '@media (max-width: 960px)': {
+      width: '45px',
+      height: '45px',
+      margin: '15px'
+    }
+  })
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/rick" className="navbar-logo" onClick={closeMobileMenu}>
-          <MyAvatar className="avatar" src={mypic} alt="picture of Trish"></MyAvatar>Trish Fox-Collis 
+          <MyAvatar className="avatar" src={mypic} alt="picture of Trish"></MyAvatar>Trish Fox-Collis
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

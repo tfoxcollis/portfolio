@@ -2,67 +2,66 @@ import React, { useEffect } from 'react'
 import './Skills.scss'
 
 const Skills = () => {
-  function setupTypewriter(t) {
-    var HTML = t.innerHTML;
-    t.innerHTML = "";
-    var cursorPosition = 0,
-      tag = "",
-      writingTag = false,
-      tagOpen = false,
-      typeSpeed = 75,
-      tempTypeSpeed = 0;
-    var type = function() {
+  function setupTypewriter (t) {
+    const HTML = t.innerHTML
+    t.innerHTML = ''
+    let cursorPosition = 0
+    let tag = ''
+    let writingTag = false
+    let tagOpen = false
+    const typeSpeed = 75
+    let tempTypeSpeed = 0
+    const type = function () {
       if (writingTag === true) {
-        tag += HTML[cursorPosition];
+        tag += HTML[cursorPosition]
       }
 
-      if (HTML[cursorPosition] === "<") {
-          tempTypeSpeed = 0;
-          if (tagOpen) {
-              tagOpen = false;
-              writingTag = true;
-          } else {
-              tag = "";
-              tagOpen = true;
-              writingTag = true;
-              tag += HTML[cursorPosition];
-          }
+      if (HTML[cursorPosition] === '<') {
+        tempTypeSpeed = 0
+        if (tagOpen) {
+          tagOpen = false
+          writingTag = true
+        } else {
+          tag = ''
+          tagOpen = true
+          writingTag = true
+          tag += HTML[cursorPosition]
+        }
       }
       if (!writingTag && tagOpen) {
-          tag.innerHTML += HTML[cursorPosition];
+        tag.innerHTML += HTML[cursorPosition]
       }
       if (!writingTag && !tagOpen) {
-          if (HTML[cursorPosition] === " ") {
-              tempTypeSpeed = 0;
-          }
-          else {
-              tempTypeSpeed = (Math.random() * typeSpeed) + 50;
-          }
-          t.innerHTML += HTML[cursorPosition];
+        if (HTML[cursorPosition] === ' ') {
+          tempTypeSpeed = 0
+        } else {
+          tempTypeSpeed = (Math.random() * typeSpeed) + 50
+        }
+        t.innerHTML += HTML[cursorPosition]
       }
-      if (writingTag === true && HTML[cursorPosition] === ">") {
-          tempTypeSpeed = (Math.random() * typeSpeed) + 50;
-          writingTag = false;
-          if (tagOpen) {
-              var newSpan = document.createElement("span");
-              t.appendChild(newSpan);
-              newSpan.innerHTML = tag;
-              tag = newSpan.firstChild;
-          }
+      if (writingTag === true && HTML[cursorPosition] === '>') {
+        tempTypeSpeed = (Math.random() * typeSpeed) + 50
+        writingTag = false
+        if (tagOpen) {
+          const newSpan = document.createElement('span')
+          t.appendChild(newSpan)
+          newSpan.innerHTML = tag
+          tag = newSpan.firstChild
+        }
       }
-      cursorPosition += 1;
+      cursorPosition += 1
       if (cursorPosition < HTML.length) {
-        setTimeout(type, tempTypeSpeed);
+        setTimeout(type, tempTypeSpeed)
       }
     }
     return {
-      type: type
-    };
+      type
+    }
   }
 
   useEffect(() => {
     const target = document.getElementById('typewriter')
-    let typer = setupTypewriter(target);
+    const typer = setupTypewriter(target)
     typer.type()
   }, [])
 

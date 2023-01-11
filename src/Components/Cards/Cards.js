@@ -40,12 +40,7 @@ const Cards = () => {
               label='Paired'
               path='https://scream-streams.vercel.app/Consent'
             />
-            {/* <CardItem
-              src={img8}
-              text='Ride through the Sahara Desert on a guided camel tour'
-              label='Adrenaline'
-              path='/sign-up'
-            /> */}
+            
           </ul>
         </div>
       </div>

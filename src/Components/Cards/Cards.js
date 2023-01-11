@@ -10,18 +10,19 @@ const Cards = () => {
   return (
     <div className="cards">
       <h1>Check out some of my projects!</h1>
+      <p>All projects utilized: GIT version control, Node, GitHub, Heroku/Vercel<br/> Honorable Mention: StackOverflow </p>
       <div id="cardsContainer" className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
             src={boafgroup}
-            text="Multi app project built with React, Rails and GraphQL"
+            text="React, Ruby on Rails, GraphQL, CircleCI, Cypress"
             label="Group"
             path="https://birds-ui.vercel.app/"
             />
             <CardItem
             src={boafsolo}
-            text="React"
+            text="React, Cypress"
             label="Solo"
             path="https://birds-of-a-feather-omega.vercel.app/"
             />
@@ -29,13 +30,13 @@ const Cards = () => {
           <ul className="cards__items">
           <CardItem
               src={golden}
-              text='Vanilla JavaScript'
+              text='JavaScript, HTML, CSS, Mocha/Chai'
               label='Solo'
               path='https://golden-tic-tac-toe.vercel.app/'
             />
             <CardItem
               src={screams}
-              text='React'
+              text='React, Cypress'
               label='Paired'
               path='https://scream-streams.vercel.app/Consent'
             />

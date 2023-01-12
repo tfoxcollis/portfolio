@@ -22,6 +22,7 @@ const Rick = () => {
   return (
     <div className="rick-main">
       <div className='rick-container'>
+        <br/>
         <RetroHitCounter
           hits={activity}
           withBorder={true}
@@ -38,7 +39,7 @@ const Rick = () => {
           borderThickness={7}
           glowStrength={0.5}
         />
-        <h3 className="rick-counter-description">successful RickRolls</h3>
+        <h3 className="rick-counter-description">Successful RickRolls</h3>
         <video src={rick} autoPlay loop />
         <p>I mainly did this for some street cred with my 13 year old. He thinks I'm cool now. <br/>Parenting is about balance.</p>
       </div>

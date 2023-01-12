@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import rick from '../../assets/videos/rick.mp4'
 import './Rick.css'
 
 const Rick = () => {
+  const [actvity, setActivity] = useState(0)
+
+  useEffect (() => {
+    fetch(`${process.env.REACT_APP_RICKROLL_DOMAIN}/api/activity`,
+    {
+      method: "POST"
+    })
+    .then((response) => response.json())
+    .then((data) => setActivity(data.id))
+  }, [])
+
   return (
     <div className="rick-main">
       <div className='rick-container'>

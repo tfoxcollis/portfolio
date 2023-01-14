@@ -7,9 +7,14 @@ import Home from '../pages/Home'
 import Rick from '../pages/Rick'
 import ProjectPreview from '../pages/ProjectPreview'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import ProjectContext from '../../ProjectContext'
 
 const App = () => {
   return (
+    <ProjectContext.Provider value={[{
+      "id": "1",
+      "title": "Boaf"
+    }]} >
       <Router>
         <Navbar />
         <Switch>
@@ -20,6 +25,7 @@ const App = () => {
           <Route path='/projects/:id' exact component={ProjectPreview} />
         </Switch>
       </Router>
+    </ProjectContext.Provider>
   )
 }
 

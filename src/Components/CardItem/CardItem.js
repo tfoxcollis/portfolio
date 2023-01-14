@@ -6,7 +6,8 @@ const CardItem = (props) => {
   return (
     <>
       <li className='cards__item'>
-        <a className='cards__item__link' href={props.path} target="_blank" rel="noreferrer">
+        <Link to={`/projects/${props.id}`}>
+        {/* <a className='cards__item__link' href={props.path} target="_blank" rel="noreferrer"> */}
           <figure className='cards__item__pic-wrap' data-category={props.label}>
             <img
               className='cards__item__img'
@@ -17,7 +18,7 @@ const CardItem = (props) => {
           <div className='cards__item__info'>
             <h5 className='cards__item__text'>{props.text}</h5>
           </div>
-        </a>
+        </Link>
       </li>
     </>
   )

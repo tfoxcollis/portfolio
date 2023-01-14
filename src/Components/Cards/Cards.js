@@ -15,12 +15,14 @@ const Cards = () => {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
+            id="1"
             src={boafgroup}
             text="React, Ruby on Rails, GraphQL, CircleCI, Cypress"
             label="Group"
             path="https://birds-ui.vercel.app/"
             />
             <CardItem
+            id="2"
             src={boafsolo}
             text="React, Cypress"
             label="Solo"
@@ -29,12 +31,14 @@ const Cards = () => {
           </ul>
           <ul className="cards__items">
           <CardItem
+              id="3"
               src={golden}
               text='JavaScript, HTML, CSS, Mocha/Chai'
               label='Solo'
               path='https://golden-tic-tac-toe.vercel.app/'
             />
             <CardItem
+              id="4"
               src={screams}
               text='React, Cypress'
               label='Paired'

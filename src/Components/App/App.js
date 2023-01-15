@@ -8,13 +8,11 @@ import Rick from '../pages/Rick'
 import ProjectPreview from '../pages/ProjectPreview'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import ProjectContext from '../../ProjectContext'
+import pages from '../../data/projects'
 
 const App = () => {
   return (
-    <ProjectContext.Provider value={[{
-      "id": "1",
-      "title": "Boaf"
-    }]} >
+    <ProjectContext.Provider value={pages} >
       <Router>
         <Navbar />
         <Switch>

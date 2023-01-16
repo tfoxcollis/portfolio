@@ -6,7 +6,7 @@ const CardItem = (props) => {
   return (
     <>
       <li className='cards__item'>
-        <Link to={{
+        <Link className="project-link" to={{
           pathname: `/projects/${props.id}`
         }}>
         {/* <a className='cards__item__link' href={props.path} target="_blank" rel="noreferrer"> */}

@@ -17,3 +17,7 @@
 .cards__item__img:hover {
   transform: scale(1.1);
 }
+
+.project-link {
+  text-decoration: none;
+}

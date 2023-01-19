@@ -20,22 +20,33 @@
 
 .proj-header > h3 {
   width: 60%;
+  font-weight: 200;
 }
 
 .proj-body {
+  width: 50%;
   margin: 0 0 2em 2em;
   font-size: 20px;
-  text-align: center;
+  border: solid 1px aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .proj-body > p {
-  border: solid 1px aliceblue;
   margin-bottom: 2em;
   padding: 2.5em;
+  font-size: 24px;
 }
 
-a {
+.proj-features, .proj-tech {
+  width: 40%;
+  margin: 10px;
+}
+
+.proj-img > a {
   text-decoration: none;
+  margin: 30px 0 10px 0;
   font-size: 30px;
   color:goldenrod
 }
@@ -46,17 +57,24 @@ a {
   margin: 0 2em 0 2em;
 }
 
-
-.proj-info > img {
-  margin-right: 2em;
+.proj-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 50%;
+}
+
+.proj-img > img {
+  margin-right: 2em;
+  height: 300px;
 }
 
 .list-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: left;
+  width: 80%;
 }
 
 .list-title {
@@ -65,8 +83,42 @@ a {
   text-decoration: underline;
 }
 
- ul {
+ .list-box > ul {
   list-style-type: circle;
-  list-style-position: inside;
+  list-style-position: outside;
   text-align:start;
+  font-size: 16px;
 }
+
+.proj-features > ul, .proj-tech > ul {
+  margin-left: 0.90em;
+  text-align: left;
+}
+
+@media screen and (max-width: 1460px) {
+  .proj-info {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .proj-img > img {
+    margin: 0 0 20px 0;
+    width: auto;
+  }
+  .proj-body {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .proj-body {
+    border: none;
+  }
+
+  .proj-img > img {
+    height: 150px;
+    width: 100%;
+  }
+}
+  

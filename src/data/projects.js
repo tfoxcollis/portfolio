@@ -17,7 +17,7 @@ const pages = [
     "title": "Birds of a Feather - solo",
     "description": "This version of Birds of a Feather is aimed at connecting LGBTQ+ families in the Las Vegas area.  A user can select a zip code and see events that are happening in that area",
     "url": "https://birds-of-a-feather-omega.vercel.app",
-    "body": "This was my solo project for mod 3 at Turing school of Software and design",
+    "body": "This was my final solo project for mod 3 at Turing school of Software and design. We had a short window to create this, so we were tasked with coming up with a very small, very niche audience.  After hearing my brother and his husband talk about how hard it was for them to find other families with similar dynamics as theirs, I decided to create Birds of a Feather as a site that connects LGBTQ+ families. The goal of the project was to demonstrate our understanding of React, React Router, and Cypress while solving a unique issue for our chosen audience.",
     "img": "/static/media/boaf-solo.20856b95fecbdf53ee04.png",
     "tech": ["React", "Javascript", "Cypress", "Heroku/Vercel"],
     "future": ["User Authentication/signin","Responsive Design"],
@@ -30,7 +30,7 @@ const pages = [
     "body": "This project is strictly Vanilla Javascript, HTML, and CSS.  The goal was to demonstrate understanding of DRY Javascript, event delegation, data model vs DOM, and project planning. This was the first time that I was responsible for creating the project iterations and I leaned into my organizational skills and drew a cascading timeline of what I believed the user should experience when playing the game.  ",
     "img": "/static/media/golden.90c090386b75aa577a39.png",
     "tech": ["Javascript", "HTML", "CSS", "Mocha/Chai", "Heroku/Vercel"],
-    "future": ["Responsive design", "Local Storage", "Ability to choose player between all 4 Golden Girls", "Player high score board to keep track of wins" ],
+    "future": ["Responsive design", "Local Storage", "Choose a Golden Girls Player!", "Player High Scores List" ],
   },
   {
     "id": "4",

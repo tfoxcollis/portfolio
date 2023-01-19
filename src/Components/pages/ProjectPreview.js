@@ -3,8 +3,6 @@ import { useParams } from 'react-router-dom';
 import ProjectContext from '../../ProjectContext'
 import './ProjectPreview.css'
 
-
-
 const ProjectPreview = () => {
   const params = useParams();
   const projects = useContext(ProjectContext)

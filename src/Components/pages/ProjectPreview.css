@@ -49,3 +49,23 @@
   width: 50%;
 
 }
+
+.list-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.list-title {
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: underline;
+
+}
+
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  text-align:start;
+}

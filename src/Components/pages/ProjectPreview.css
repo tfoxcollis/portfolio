@@ -1,0 +1,9 @@
+.project-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:aliceblue;
+}
+
+/* .project-main > h1 {
+} */

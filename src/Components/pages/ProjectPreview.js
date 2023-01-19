@@ -2,26 +2,62 @@ import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom';
 import ProjectContext from '../../ProjectContext'
 import './ProjectPreview.css'
-import boafgroup from '../../assets/boaf-group.png'
-import boafsolo from '../../assets/boaf-solo.png'
-import golden from '../../assets/golden.png'
-import screams from '../../assets/scream-streams.png'
-
 
 const ProjectPreview = () => {
   const params = useParams();
   const projects = useContext(ProjectContext)
   const project = projects.find(project => project.id === params.id)
+
+  const futureBuild = project.future.map(future => {
+    return(
+      <li>{future}</li>
+    )
+  })
+
+  const techUsed = project.tech.map(tech => {
+    return(
+      <li>{tech}</li>
+    )
+  })
+
   return (
     <div className="project-main">
-      <h1>{project.title}</h1>
-      <h4>{project.description}</h4>
-      <img style={{width:'700px'}} src={project.img} />
-      <h3>{project.body}</h3>
-      <a href={project.url}>
-        Project Website
-      </a>
-
+      <div className="proj-header">
+          <h1>{project.title}</h1>
+          <h3>{project.description}</h3>
+      </div>
+      <div className="proj-info">
+        <div className="proj-img">
+          <img src={project.img} />
+          <a href={project.url}>
+            Check it out!
+          </a>
+        </div>
+        <div className="proj-body"> 
+          <p>
+            &nbsp; &nbsp;{project.body}
+          </p>
+          <div className="list-box">
+            <div className="proj-features">
+              <p className="list-title">
+                Future Features: 
+              </p>
+              <ul>
+                {futureBuild}
+              </ul>
+            </div>
+            <br/><br/>
+            <div className="proj-tech">
+              <p className="list-title">
+                Technology used: 
+              </p>
+              <ul>
+                {techUsed}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

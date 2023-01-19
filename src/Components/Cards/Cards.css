@@ -38,7 +38,7 @@
   border-radius: 10px;
 }
 
-.cards-item {
+.project-link {
   display: flex;
   flex-flow: column;
   align-items: center;

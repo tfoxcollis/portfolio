@@ -28,14 +28,16 @@
   text-align: center;
 }
 
-.proj-body > a {
-  text-decoration: none;
-}
-
 .proj-body > p {
   border: solid 1px aliceblue;
   margin-bottom: 2em;
   padding: 2.5em;
+}
+
+a {
+  text-decoration: none;
+  font-size: 30px;
+  color:goldenrod
 }
 
 .proj-info {
@@ -44,10 +46,10 @@
   margin: 0 2em 0 2em;
 }
 
+
 .proj-info > img {
   margin-right: 2em;
   width: 50%;
-
 }
 
 .list-box {
@@ -61,10 +63,9 @@
   font-weight: bold;
   font-size: 25px;
   text-decoration: underline;
-
 }
 
-ul {
+ ul {
   list-style-type: circle;
   list-style-position: inside;
   text-align:start;

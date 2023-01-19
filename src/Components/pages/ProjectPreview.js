@@ -16,6 +16,12 @@ const ProjectPreview = () => {
     )
   })
 
+  const techUsed = project.tech.map(tech => {
+    return(
+      <li>{tech}</li>
+    )
+  })
+
   return (
     <div className="project-main">
       <div className="proj-header">
@@ -23,28 +29,33 @@ const ProjectPreview = () => {
           <h3>{project.description}</h3>
       </div>
       <div className="proj-info">
-        <img style={{height:'300px'}} src={project.img} />
-        <div className="proj-body">
+          <img style={{height:'300px'}} src={project.img} />
+        <div className="proj-body"> 
           <p>
             {project.body}
             <br/><br/>
             <div className="list-box">
-              <p className="list-title">Future Features could include: </p>
-               
+              <p className="list-title">
+                Future Features could include: 
+              </p>
               <ul>
                 {futureBuild}
               </ul>
-
+              <br/><br/>
+            <p className="list-title">
+            Technology used: 
+          </p>
+          <ul>
+            {techUsed}
+          </ul>
             </div>
-
-            <br/><br/><br/>  
+            <br/><br/> 
             <a href={project.url}>
               Check it out!
             </a>
           </p>
         </div>
       </div>
-
     </div>
   )
 }

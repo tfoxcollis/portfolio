@@ -10,7 +10,7 @@ const Cards = () => {
   return (
     <div className="cards">
       <h1>Check out some of my projects!</h1>
-      <p>All projects utilized: GIT version control, Node, GitHub, Heroku/Vercel<br/> Honorable Mention: StackOverflow </p>
+      <p>All projects utilized: Git version control, Node, GitHub, Heroku/Vercel<br/> Honorable Mention: StackOverflow </p>
       <div id="cardsContainer" className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">

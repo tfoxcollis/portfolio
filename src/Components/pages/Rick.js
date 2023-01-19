@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import rick from '../../assets/videos/rick.mp4'
 import './Rick.css'
 import RetroHitCounter from 'react-retro-hit-counter';
+import rickdef from '../../assets/rickrollingexp.png'
 
 const Rick = () => {
   const [activity, setActivity] = useState(0)
@@ -40,6 +41,7 @@ const Rick = () => {
           glowStrength={0.5}
         />
         <h3 className="rick-counter-description">Successful RickRolls</h3>
+        <img src={rickdef} className="rick-def-img" alt="Rick rolling definition"/>
         <video src={rick} autoPlay loop />
         <p>I mainly did this for some street cred with my 13 year old. He thinks I'm cool now. <br/>Parenting is about balance.</p>
       </div>

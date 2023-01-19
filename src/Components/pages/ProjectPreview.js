@@ -15,6 +15,7 @@ const ProjectPreview = () => {
   return (
     <div className="project-main">
       <h1>{project.title}</h1>
+      <h4>{project.description}</h4>
       <img style={{width:'700px'}} src={project.img} />
       <h3>{project.body}</h3>
       <a href={project.url}>

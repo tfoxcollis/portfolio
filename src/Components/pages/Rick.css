@@ -20,6 +20,11 @@
 .rick-counter-description {
   color: #FFF;
 }
+
+.rick-def-img {
+  height: 10em;
+}
+
 .rick-container > h1 {
   text-align: center;
   color:aliceblue;

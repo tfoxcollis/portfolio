@@ -14,13 +14,20 @@ const ProjectPreview = () => {
   const project = projects.find(project => project.id === params.id)
   return (
     <div className="project-main">
-      <h1>{project.title}</h1>
-      <h4>{project.description}</h4>
-      <img style={{width:'700px'}} src={project.img} />
-      <h3>{project.body}</h3>
-      <a href={project.url}>
-        Project Website
-      </a>
+      <div className="proj-header">
+          <h1>{project.title}</h1>
+          <h3>{project.description}</h3>
+      </div>
+      <div className="proj-info">
+        <img style={{height:'300px'}} src={project.img} />
+        <div className="proj-body">
+          <p>{project.body}<br/><br/><br/>  
+            <a href={project.url}>
+              Check it out!
+            </a>
+          </p>
+        </div>
+      </div>
 
     </div>
   )

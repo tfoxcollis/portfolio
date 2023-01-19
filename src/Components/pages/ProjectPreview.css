@@ -3,7 +3,49 @@
   flex-direction: column;
   align-items: center;
   color:aliceblue;
+  margin: 1.1em;
 }
 
-/* .project-main > h1 {
-} */
+.proj-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1em 0 6em 0;
+}
+
+.proj-header > h1 {
+  font-size: 40px;
+}
+
+.proj-header > h3 {
+  width: 60%;
+}
+
+.proj-body {
+  margin: 0 0 2em 2em;
+  font-size: 20px;
+  text-align: center;
+}
+
+.proj-body > a {
+  text-decoration: none;
+}
+
+.proj-body > p {
+  border: solid 1px aliceblue;
+  margin-bottom: 2em;
+  padding: 2.5em;
+}
+
+.proj-info {
+  display: flex;
+  flex-direction: row;
+  margin: 0 2em 0 2em;
+}
+
+.proj-info > img {
+  margin-right: 2em;
+  width: 50%;
+
+}

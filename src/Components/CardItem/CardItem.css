@@ -1,6 +1,6 @@
 
 
-.cards__item__img {
+.cards-item-img {
   position: absolute;
   top: 0;
   right: 0;
@@ -14,7 +14,7 @@
   transition: all 0.2s linear;
 }
 
-.cards__item__img:hover {
+.cards-item-img:hover {
   transform: scale(1.1);
 }
 

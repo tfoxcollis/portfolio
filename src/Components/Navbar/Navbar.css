@@ -162,5 +162,10 @@
     color: #242424;
     transition: 250ms;
   }
+}
 
+@media Screen and (max-width: 400px) {
+  .navbar-logo {
+    font-size: 1em;
+  }
 }

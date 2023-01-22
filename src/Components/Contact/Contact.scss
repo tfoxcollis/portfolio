@@ -196,6 +196,12 @@
     pointer-events: none;
     transition: font-size 64ms ease-out, top 64ms ease-out, left 64ms ease-out;
   }
+  @media screen and (max-width: 450px) {
+    label.text-area {
+      top: 1.2em;
+    }
+  }
+
 }
 
 .fighter-icon {
